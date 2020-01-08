@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfResource"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="{Binding Source={StaticResource resources}, Path=ID001}" Height="450" Width="800">
     <Grid>
-        
+        <Button 
+            Content="{Binding Source={StaticResource resources}, Path=ID002}" 
+            Click="Button_Click"
+            Width="100"
+            Height="30"
+            BorderThickness="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+        <Button
+            Content="{Binding Source={StaticResource resources}, Path=ID004}"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Width="100"
+            Height="30"
+            Margin="10"/>
     </Grid>
 </Window>
