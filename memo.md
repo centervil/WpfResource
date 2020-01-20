@@ -28,11 +28,18 @@
         1. 指定されたID探す
             * なければ、デフォルト言語リソースを探しに行く
 1. 画像リソース
-    1. Resourceフォルダへの登録
-        * VS上でビルドアクション？をいじる
-    1. App.xamlへのResourceの登録（WindowのXamlへの登録でもよい）
-    1. 登録したリソースの利用
-        * xamlからのアクセス
-            * StaticResourceとDynamicResourceの違い
-        * コードからのアクセス
+    画像の表示にはImageコントロールを利用する
+    https://docs.microsoft.com/ja-jp/dotnet/api/system.windows.controls.image?view=netframework-4.8
+    1. Resourceフォルダを使う方法
+    https://aitos.jp/blogs/ito/?p=119
+        1. Resourceフォルダへの登録
+            * VS上でビルドアクション？をいじる
+        1. App.xamlへのResourceの登録（WindowのXamlへの登録でもよい）
+        1. 登録したリソースの利用
+            * xamlからのアクセス
+                * StaticResourceとDynamicResourceの違い
+            * コードからのアクセス
+    1. Dllにする方法
+
+    1. resxファイルへ登録する方法
 
